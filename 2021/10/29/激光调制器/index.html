@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive - Hexo</title>
+  <title>激光调制器 - Hexo</title>
+  
+    <meta name="keywords" content="idea">
   
 
   
@@ -104,7 +104,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -355,7 +355,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -431,111 +431,337 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-	  <article id="arc" class="post article white-box reveal shadow">
-			
-			
-				
-				
-					
-						
-						<h2>2021</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/10/29/laser-modulation/">
-									<time>10-29</time>
-									
-										laser modulation
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/10/29/%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E5%99%A8/">
-									<time>10-29</time>
-									
-										激光调制器
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/">
-									<time>10-29</time>
-									
-										光电子技术第二章
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/">
-									<time>10-29</time>
-									
-										光电子技术第一章
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/10/27/paper-translation/">
-									<time>10-27</time>
-									
-										paper translation
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/2021/03/22/hello-world/">
-									<time>03-22</time>
-									
-										Hello World
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        激光调制器
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Oct 29, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="激光调制器" data-path="/2021/10/29/%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E5%99%A8/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+  
+  <h1 id="“难用的”激光调制器件"><a href="#“难用的”激光调制器件" class="headerlink" title="“难用的”激光调制器件"></a>“难用的”激光调制器件</h1><blockquote>
+<p>本人对激光调制器件使用的最大感受便是——<strong>难用</strong>，本文浅谈为什么会有此种感受，以及破解之道</p>
+</blockquote>
+<h2 id="一、总括"><a href="#一、总括" class="headerlink" title="一、总括"></a>一、总括</h2><p>经过学习与在实验室里的实践之后，我得到了对于激光调制器件最直观的感受——难用，很难用。为搞清楚为什么使用起来如此困难，首先我开始反思自身能力问题。发现自身存在很严重的纸上谈兵情况，只是在课堂上学习了器件的原理，距离实际使用之间相差甚远。但另一方面，除能力有限外，激光调制器件本身也确实很难用。这里的难用是相比较于电子器件，如运算放大器等。在实验室跟随学姐做电光调Q与声光调Q的过程中，总会遇到与理论严重不符无法解释的状况，令人非常头痛。</p>
+<h2 id="二、分析"><a href="#二、分析" class="headerlink" title="二、分析"></a>二、分析</h2><h3 id="1-思路梳理"><a href="#1-思路梳理" class="headerlink" title="1. 思路梳理"></a>1. 思路梳理</h3><p>在各种“高谈阔论”开始之前，有必要明确，到底什么是激光调制？课本上的定义为：</p>
+<blockquote>
+<p>激光调制为利用激光作为载波的调制。</p>
+</blockquote>
+<p>更直白的说，即为：对激光进行的调制。</p>
+<p>对激光调制的研究大抵都会从分类开始，教材中给出的激光调制的分类方式如下：</p>
+<blockquote>
+<p>激光调制<br>|—- 按位置分<br>|                      |—- 内调制<br>|                      |—- 外调制<br>|—- 按性质分<br>|                      |—- 模拟调制<br>|                                              |—- 振幅调制<br>|                                              |—- 相位调制<br>|                                              |—- 频率调制<br>|                      |—- 数字调制<br>|                                              |—- 脉冲调制<br>|                                              |—- 脉冲编码调制</p>
+</blockquote>
+<p>此外，我认为还可以按照调制的手段进行分类，将激光调制分为：</p>
+<ul>
+<li>声光调制</li>
+<li>电光调制</li>
+<li>磁光调制</li>
+</ul>
+<p>此种分类方法更着重强调调制的宏观方法，且与上述分类方法可以混用，如电光调制既可以是振幅调制，也可以是相位调制。</p>
+<p>接下来，我便以自身的实验经历与所阅读的文献，展开讨论我对激光调制及器件的看法。</p>
+<h3 id="2-与电子器件的对比"><a href="#2-与电子器件的对比" class="headerlink" title="2. 与电子器件的对比"></a>2. 与电子器件的对比</h3><p>评价一个器件好不好用，我觉得需要将其放入使用的系统中进行综合考量。<br>评价一个激光调制器件好不好用，我觉得最好的方法是与电子器件进行对比。</p>
+<ul>
+<li><p>首先考虑系统的搭建难度：<br>电子器件可以在面包板上进行操作，小巧而且不容易出现问题，器件与器件之间更是直接通过导线相连便可。反观光学系统，需要在专门的试验台上搭建系统，便捷性大大降低，而且器件与器件之间的连接需要手动准直以保证光线顺利通过。其准直步骤极其繁琐而且不易操作。我在实验室中跟随学姐进行实验前都需要花费很长时间对光具组进行准直，而且实验过程中若无意碰到或者根据需要挪动光学器件后还需重新准直，耗费大量时间精力。</p>
+</li>
+<li><p>其次是系统设计方面的难度：<br>使用电子器件的某中功能时，为避免搭建系统后出错以致无法使用进而浪费时间精力的情况发生，可以在搭建系统前使用各种仿真软件进行放真，如Multisim，Proteus。在仿真软件中，可以实时看到系统的运行状态，也可以实时对系统进行相应调整，极为方便。若在仿真过程中一切顺利，则在真实系统搭建起来后也大概率不会出现问题。但反观空间光学系统，并不存在好用的仿真软件，即使可以使用Comsol进行电磁场仿真，也只是能看到大概的局部电磁场效果，Zemax也只适用于几何光学成像系统的设计。这就使得使用者只能直接进行实验，而当实验过程中无法得到自己想要的结果时也无法明确是系统设计问题还是器件或者其他地方出现了问题，使得调试过程异常复杂且具有随机性。</p>
+</li>
+<li><p>最后也是最关键的便是器件的稳定性：<br>电子元器件在生产出来后其功能基本会保持稳定不变，只需按照使用说明接通特定引脚便基本可以实现其设计时的预期指标。但光学器件并不是如此，以实验室里学姐使用的声光调Q器件为例，按照理论计算，调Q后脉宽应该至少压窄到20几纳米，但实际使用时至多能压窄到80纳米左右，反复调试依然无法继续压窄，原因不明。在使用电光调Q时，更是直接与理论不符，在不加电压时居然测出旋转一周出现三个非对称的通光极大值方向。器件的实际使用不稳定性大大增加了实验的难度。</p>
+</li>
+</ul>
+<p>以上种种使激光调制器件的使用难度指数级倍增，极大限制了其使用与普及。</p>
+<h3 id="3-原因分析"><a href="#3-原因分析" class="headerlink" title="3. 原因分析"></a>3. 原因分析</h3><p>面对凡此种种，不禁会问，为什么会出现上述这些情况？</p>
+<p>我认为：</p>
+<ol>
+<li><p>首先是发展较晚，继第二次工业革命之后，电子器件便雨后春笋般疯狂发展，在上世纪60年代集成电路兴起后更是直接走进千家万户。广泛的应用场景带来巨大的经济效益，使相关的研究更加投入。而光电子器件则没有如此良好的发展环境。</p>
+</li>
+<li><p>其次是理论成熟度的差异。关于电子的理论，如电容电阻电感以及各种有关电的效应早已为人们所熟知，而光子本身就是一个比较新的概念，激光更是上个实际60年代才被发明（同时期集成电路已经开始发展），两者理论的成熟度可以说是一个处于孩童或者至多青春期，另一个早已步入成年，甚至已走向晚年。</p>
+</li>
+<li><p>深刻剖析一下，以声光效应为例：关于声光效应的理论其实也很成熟，但为什么使用起来确如此繁琐呢？还会出现各种出人意料的问题？我觉得根本愿意还是稳定度不够，一个声光调Q包括声光换能器，声光晶体，水冷等装置。这其中有很多不稳定因素，如声光晶体会不会受温度的影响，晶体切角是否准确，换能器调制速度是否真的和预设的一致。这些都是隐性问题且不易察觉，察觉出后也不易更正。简单的说，就是器件使用条件很苛刻。为什么使用条件这么苛刻？我觉得主要原因在于难以检测。现在多数器件都是利用晶体的各类效应。晶体是长出来的，技术要求很高，且长出的晶体并不一定完全按照预期。前几日，学姐收到一块晶体，但经测试其相位匹配角发现，晶体切角并非预期切角。同样的事情很可能发生在成品器件中，其检测困难可能导致出现品质不合格的漏网之鱼。在使用时也可能因为温度或者功率的不同导致折射率偏离预期。更不用提有时会器件会设计固定的偏振方向，实际使用时入射偏振方向差一点便会引起巨大波动。也存在晶体在使用过程中被打坏，搬运过程中受外力影响被碰坏的可能。这些不稳定因素都导致了器件的使用难度直线上升。</p>
+</li>
+</ol>
+<p>归纳上述分析，我认为光电子器件如此难用最主要的原因在于难以找到一个稳定的工作介质（晶体），相关理论难以详尽描述各种实际使用时出现的状况，以致工作条件苛刻，最终导致器件的使用困难。</p>
+<h3 id="4-解决办法"><a href="#4-解决办法" class="headerlink" title="4. 解决办法"></a>4. 解决办法</h3><p>我认为，解决问题的方向有两条：</p>
+<ul>
+<li>一是找到稳定的工作介质</li>
+<li>二是创造稳定的工作条件</li>
+</ul>
+<p>关于第一个解决方向，最好的解决方式便是大力发展晶体学。这是最根本的解决方式但却不是最实际的方法。试想我们期待的完美工作介质需要具有：不受温度影响，对偏振方向不敏感，对切角不敏感，电光系数（声光系数）高…想找到这样的晶体无异于大海捞针。当然，现阶段也已经有很多相关研究。如在2017年有人提出了一种新型的<em>KYW</em>晶体^[1]^。此种<em>KYW</em>晶体具有很好的<em>radiation resistance</em>，经过计算，可以在特定工作角度上提高使衍射效率提高10倍左右(见下图)，进而省去了水冷系统的限制，拓展了使用场景。这样的对于晶体本身性能的改进会是一个循序渐进的过程，仍需要倾注大量人力物力。</p>
+<p><img src="./picture/figure6.png" class="lazyload" data-srcset="./picture/figure6.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="figure6"></p>
+<p>​                                               新型KYW晶体制作的声光调制器与原始器件的对比</p>
+<p>关于第二个解决方向也已经有很多相关研究。如通过使用两块取向相互垂直的<em>KTP</em>晶体消除梯度热场中热效应带来的折射率波动，使电光调制更加稳定，进而提升调制效率^[2]^。原本的衍射图像与经过重新系统设计后的衍射图像对比如下图所示，可以明显看出条纹的波动被消除。此类解决方案更多是对现有介质进行优化设计，通过系统结构的改进来增加稳定性。总体来说，成本较低，见效较快，是现阶段在晶体没有突破性进展之前应着重发展的方向。</p>
+<p><img src="./picture/origin.png" class="lazyload" data-srcset="./picture/origin.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="origin"><br>                                                                         原本的衍射图像</p>
+<p><img src="./picture/process.png" class="lazyload" data-srcset="./picture/process.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="process"><br>                                                                        新系统的衍射图像</p>
+<p>综合上述分析，或许真正的破局之道在于一边寻找晶体的突破以治本，一边寻找优化结构的方法解决燃眉之急。当工作介质晶体也像电子的常用基底——硅，一样稳定时，便是激光调制器件真正成熟之日。</p>
+<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>本文站在使用者的视角，分析了激光调制器件难用的原因。并得出结论，即根本原因在于器件的稳定性差。接着对稳定性差的问题进行分析，提出两种解决方向，并结合现有文献对两个发展方向进行了分析与评价。最后对激光调制器件的发展进行展望，期待其和电子原件可同样稳定好用的一天的到来。</p>
+<p>本人见识有限才疏学浅，以上分析全部建立于现有知识的基础之上，如有不当请斧正。</p>
+<p>参考文献：<br>[1] Acousto-optic modulators based on a KYW crystal<br>[2] Electro-optical modulators based on KTP crystalsfor high-power lasers in the mid-IR region</p>
+
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/10/29/%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E5%99%A8/>http://example.com/2021/10/29/%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E5%99%A8/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-10-29T10:04:42+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Oct 29, 2021</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/idea/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>idea</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/10/29/%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E5%99%A8/&title=激光调制器 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/10/29/%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E5%99%A8/&title=激光调制器 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/10/29/%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E5%99%A8/&title=激光调制器 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2021/10/29/laser-modulation/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>laser modulation</p>
+          <p class='content'>opinion of laser modulation technique
+opinion about the article: http://dx.doi.org/10.1070/QEL162...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/'>
+          <p class='title'>光电子技术第二章<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>调Q技术2.1 调Q基本原理一、调Q目的1.目的：压缩脉冲宽度、提高峰值功率
+
+
+脉冲宽度
+峰值功率(1J)
+类型
+
+
+
+10^-3^~10^-4^s
+10^3^~10^4^s
+普通脉冲激光器
+...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+  <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.0/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -543,103 +769,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/idea/" style="font-size: 24px; color: #555">idea</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 24px; color: #555">笔记</a> <a href="/tags/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/" style="font-size: 14px; color: #999">论文翻译</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%80%BB%E6%8B%AC"><span class="toc-text">一、总括</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%88%86%E6%9E%90"><span class="toc-text">二、分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%80%9D%E8%B7%AF%E6%A2%B3%E7%90%86"><span class="toc-text">1. 思路梳理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%B8%8E%E7%94%B5%E5%AD%90%E5%99%A8%E4%BB%B6%E7%9A%84%E5%AF%B9%E6%AF%94"><span class="toc-text">2. 与电子器件的对比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90"><span class="toc-text">3. 原因分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-text">4. 解决办法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">三、总结</span></a></li></ol>
     </div>
   </section>
 
 
   
 
-  
-
 
 </aside>
+
 
 
 		  
@@ -648,21 +799,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="激光调制器";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
