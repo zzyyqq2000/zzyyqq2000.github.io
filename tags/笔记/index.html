@@ -24,7 +24,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive: 2021/3 - Hexo</title>
+  <title>Tag: 笔记 - Hexo</title>
   
 
   
@@ -104,7 +104,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -355,7 +355,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper  dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -430,12 +430,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
+
 <div class='l_main'>
-	
-		
+  
+    
+      
   <section class="post-list">
     
       
+        
+          
         
           
         
@@ -452,16 +456,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title" >
-      <a href="/2021/03/22/hello-world/">
-        Hello World
+      <a href="/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/">
+        光电子技术第二章
       </a>
     </h2>
   
   <div class='md'>
     
       
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+        调Q技术2.1 调Q基本原理一、调Q目的1.目的：压缩脉冲宽度、提高峰值功率
+
+
+脉冲宽度
+峰值功率(1J)
+类型
+
+
+
+10^-3^~10^-4^s
+10^3^~10^4^s
+普通脉冲激光器
+
+
+10^-8^~10^-9^s
+10^8^~10^9^s
+调Q激光器
+
+
+2. 举例
+激光测距仪
+激光阴影成像仪
+
+二、脉冲固体激光器的输出特性1. 特点a. 输出脉冲呈尖峰振荡（由许多振幅、脉宽、...
       
     
   </div>
@@ -469,12 +495,62 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2021-03-22</time>
+        <time>2021-10-29</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2021/03/22/hello-world/'>
+          <a class='readmore' href='/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/'>
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/">
+        光电子技术第一章
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        第一节 调制的基本概念一、调制的目的与定义1. 调制的目的目的：将低频信号加载到高频载波上以利于信息的传递（可能会考）
+2. 调制的定义定义：利用调制信号去改变载波的某一参数，使其按调制的信号规律变化的过程。
+解释：
+
+调制信号：要传递的信息要转化为电信号——调制信号
+载波：信息载体。要频率高且固定
+某一参数：可以是振幅，相位，频率等（只改一个）
+调制信号的规律变化：载波的某一参数经调制后必...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time>2021-10-29</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/'>
             Read More
           </a>
         </div>
@@ -494,7 +570,8 @@ Qu...
   
 
 
-	
+    
+  
 </div>
 <aside class='l_side'>
   
@@ -614,14 +691,14 @@ Qu...
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>

@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive: 2021/3 - Hexo</title>
+  <title>光电子技术第一章 - Hexo</title>
+  
+    <meta name="keywords" content="笔记">
   
 
   
@@ -104,7 +104,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -355,7 +355,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -431,70 +431,265 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
-      
+    
+    
+      <h1 class="title">
+        光电子技术第一章
+      </h1>
+      <div class='new-meta-box'>
         
           
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
+          
         
-      
-    
-    
-      
+          
+            
+
+          
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/03/22/hello-world/">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Oct 29, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
       
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
+      <div id="lc-pv" data-title="光电子技术第一章" data-path="/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-03-22</time>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h1 id="第一节-调制的基本概念"><a href="#第一节-调制的基本概念" class="headerlink" title="第一节 调制的基本概念"></a>第一节 调制的基本概念</h1><h2 id="一、调制的目的与定义"><a href="#一、调制的目的与定义" class="headerlink" title="一、调制的目的与定义"></a>一、调制的目的与定义</h2><h3 id="1-调制的目的"><a href="#1-调制的目的" class="headerlink" title="1. 调制的目的"></a>1. 调制的目的</h3><p>目的：<strong>将低频信号加载到高频载波上以利于信息的传递</strong>（可能会考）</p>
+<h3 id="2-调制的定义"><a href="#2-调制的定义" class="headerlink" title="2. 调制的定义"></a>2. 调制的定义</h3><p>定义：利用<strong>调制信号</strong>去改变<strong>载波</strong>的某一参数，使其<strong>按调制的信号规律变化</strong>的过程。</p>
+<p>解释：</p>
+<ol>
+<li>调制信号：要传递的信息要转化为电信号——调制信号</li>
+<li>载波：信息载体。要频率高且固定</li>
+<li>某一参数：可以是振幅，相位，频率等（只改一个）</li>
+<li>调制信号的规律变化：载波的某一参数经调制后<strong>必须按调制信号的规律变化</strong>，否则失真 </li>
+</ol>
+<h2 id="二、激光调制"><a href="#二、激光调制" class="headerlink" title="二、激光调制"></a>二、激光调制</h2><h3 id="1-激光调制"><a href="#1-激光调制" class="headerlink" title="1. 激光调制"></a>1. 激光调制</h3><p> 激光为载波的调制</p>
+<h4 id="（1）定义"><a href="#（1）定义" class="headerlink" title="（1）定义"></a>（1）定义</h4><p>把信息加载到激光辐射上的过程</p>
+<h4 id="（2）特点"><a href="#（2）特点" class="headerlink" title="（2）特点"></a>（2）特点</h4><p>高频调制，频带宽，理想载体</p>
+<h4 id="（3）激光调制与无线电波调制的异同？"><a href="#（3）激光调制与无线电波调制的异同？" class="headerlink" title="（3）激光调制与无线电波调制的异同？"></a>（3）激光调制与无线电波调制的异同？</h4><p>概念相同：相位调制、频率调制、振幅调制、脉冲调制<br>结构不同：激光为高频调制，无线电为低频调制<br>共同点：用非线性效应调制，即无线电波调制利用放大器的非线性效应调制，激光用电光、磁光，声光等非线性效应</p>
+<h4 id="（4）调制器"><a href="#（4）调制器" class="headerlink" title="（4）调制器"></a>（4）调制器</h4><p>想用家光完成通信就要把信息加载到激光上，<strong>完成这一过程的被称为调制器</strong></p>
+<h4 id="（5）应用"><a href="#（5）应用" class="headerlink" title="（5）应用"></a>（5）应用</h4><ol>
+<li>实现信息加载——光信息技术：激光制导等</li>
+<li>控制工作状态——调Q，锁模技术：产生超短脉冲等</li>
+</ol>
+<h3 id="2-激光调制的分类（两种）"><a href="#2-激光调制的分类（两种）" class="headerlink" title="2. 激光调制的分类（两种）"></a>2. 激光调制的分类（两种）</h3><h4 id="（1）按调制器与激光器的相对位置分"><a href="#（1）按调制器与激光器的相对位置分" class="headerlink" title="（1）按调制器与激光器的相对位置分"></a>（1）按调制器与激光器的相对位置分</h4><ul>
+<li><strong>内调制</strong>：在激光形成过程中，一调制信号改变激光震荡某一参数，即用<strong>调制信号控制着激光的形成</strong>（两种实现方式）<br>（1） 用调制信号控制泵浦电流，如LD的调制-直接调制<br>（2） 在谐振腔内放置调制器</li>
+</ul>
+<p>​        优点：调制器需要激励功率小，调制效率高<br>​        缺点：有附加损耗，降低输出功率；调制器带宽受谐振腔通带的限制</p>
+<ul>
+<li><strong>外调制</strong>：调制器在激光腔外<br>优点：不影响激光器的输出功率；不受谐振腔通带的限制。<br>缺点：调制效率低。</li>
+</ul>
+<h4 id="（2）按调制的性质分"><a href="#（2）按调制的性质分" class="headerlink" title="（2）按调制的性质分"></a>（2）按调制的性质分</h4><p>激光的瞬间电场 :                    $  e_c(t) = A_ccos(\omega_c t+\phi_c)  $</p>
+<ul>
+<li>$A_c$——振幅调制/光强调制（$I = |A|^2$）</li>
+<li>$\omega_c$——频率调制                                </li>
+<li>$\phi_c$——相位调制</li>
+</ul>
+<p>若以脉冲激光作为载波：</p>
+<ul>
+<li>脉冲调制</li>
+<li>脉冲编码调制（数字式调制）</li>
+</ul>
+<h2 id="三、振幅调制和光强调制"><a href="#三、振幅调制和光强调制" class="headerlink" title="三、振幅调制和光强调制"></a>三、振幅调制和光强调制</h2><h3 id="1-振幅调制（调幅-AM）"><a href="#1-振幅调制（调幅-AM）" class="headerlink" title="1. 振幅调制（调幅-AM）"></a>1. 振幅调制（调幅-AM）</h3><p>（1）定义：载波的振幅随着调制信号的规律发生变化的震荡<br>调制前： $  e_c(t) = A_ccos(\omega_c t+\phi_c)  $ (注：c-carrier为载波)<br>调制后： $  e_c(t) = A_c(t) cos(\omega_c t+\phi_c)  $<br>调制后的振幅： $   A_c(t) = A_c+Ka(t)  $<br>$a(t)$为调制信号（信息），K为比例系数（调制灵敏度）</p>
+<p>假设： $   a(t) = A_m cos(\omega_m t) $ 注：m – modulate (调制)</p>
+<p>调制后的电场： $ e_c(t)=(A_c+KA_mcos(\omega_m t))cos(\omega_c t+\phi_c) $</p>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/03/22/hello-world/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/>http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-10-29T09:32:20+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Oct 29, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>笔记</p></a></div>
 
 
-	
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/&title=光电子技术第一章 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/&title=光电子技术第一章 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/&title=光电子技术第一章 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>光电子技术第二章</p>
+          <p class='content'>调Q技术2.1 调Q基本原理一、调Q目的1.目的：压缩脉冲宽度、提高峰值功率
+
+
+脉冲宽度
+峰值功率(1J)
+类型
+
+
+
+10^-3^~10^-4^s
+10^3^~10^4^s
+普通脉冲激光器
+...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/10/27/paper-translation/'>
+          <p class='title'>paper translation<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>光声层析成像在生命科学中的实际应用摘要将宏观观测与微观发现紧密联系在一起的成像技术使生命科学受益匪浅。作为一种在多个空间尺度上都可以高速对光吸收对比度进行高灵敏度成像的技术，光声层析成像（pho...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -502,103 +697,28 @@ Qu...
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 24px; color: #555">笔记</a> <a href="/tags/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/" style="font-size: 14px; color: #999">论文翻译</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%B0%83%E5%88%B6%E7%9A%84%E7%9B%AE%E7%9A%84%E4%B8%8E%E5%AE%9A%E4%B9%89"><span class="toc-text">一、调制的目的与定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%B0%83%E5%88%B6%E7%9A%84%E7%9B%AE%E7%9A%84"><span class="toc-text">1. 调制的目的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%B0%83%E5%88%B6%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">2. 调制的定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6"><span class="toc-text">二、激光调制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6"><span class="toc-text">1. 激光调制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E5%AE%9A%E4%B9%89"><span class="toc-text">（1）定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E7%89%B9%E7%82%B9"><span class="toc-text">（2）特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E4%B8%8E%E6%97%A0%E7%BA%BF%E7%94%B5%E6%B3%A2%E8%B0%83%E5%88%B6%E7%9A%84%E5%BC%82%E5%90%8C%EF%BC%9F"><span class="toc-text">（3）激光调制与无线电波调制的异同？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E8%B0%83%E5%88%B6%E5%99%A8"><span class="toc-text">（4）调制器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%885%EF%BC%89%E5%BA%94%E7%94%A8"><span class="toc-text">（5）应用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E7%9A%84%E5%88%86%E7%B1%BB%EF%BC%88%E4%B8%A4%E7%A7%8D%EF%BC%89"><span class="toc-text">2. 激光调制的分类（两种）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E6%8C%89%E8%B0%83%E5%88%B6%E5%99%A8%E4%B8%8E%E6%BF%80%E5%85%89%E5%99%A8%E7%9A%84%E7%9B%B8%E5%AF%B9%E4%BD%8D%E7%BD%AE%E5%88%86"><span class="toc-text">（1）按调制器与激光器的相对位置分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E6%8C%89%E8%B0%83%E5%88%B6%E7%9A%84%E6%80%A7%E8%B4%A8%E5%88%86"><span class="toc-text">（2）按调制的性质分</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%8C%AF%E5%B9%85%E8%B0%83%E5%88%B6%E5%92%8C%E5%85%89%E5%BC%BA%E8%B0%83%E5%88%B6"><span class="toc-text">三、振幅调制和光强调制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%8C%AF%E5%B9%85%E8%B0%83%E5%88%B6%EF%BC%88%E8%B0%83%E5%B9%85-AM%EF%BC%89"><span class="toc-text">1. 振幅调制（调幅-AM）</span></a></li></ol></li></ol>
     </div>
   </section>
 
 
   
 
-  
-
 
 </aside>
+
 
 
 		  
@@ -607,21 +727,21 @@ Qu...
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="光电子技术第一章";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>

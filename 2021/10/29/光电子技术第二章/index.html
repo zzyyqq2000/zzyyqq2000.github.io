@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Tag: academic - Hexo</title>
+  <title>光电子技术第二章 - Hexo</title>
+  
+    <meta name="keywords" content="笔记">
   
 
   
@@ -355,7 +355,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -430,73 +430,275 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
+    
+      <h1 class="title">
+        光电子技术第二章
+      </h1>
+      <div class='new-meta-box'>
         
           
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
+          
         
-      
-    
-    
-      
+          
+            
+
+          
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/10/27/paper-translation/">
-        paper translation
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Oct 29, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
       
-        光声层析成像在生命科学中的实际应用摘要将宏观观测与微观发现紧密联系在一起的成像技术使生命科学受益匪浅。作为一种在多个空间尺度上都可以高速对光吸收对比度进行高灵敏度成像的技术，光声层析成像（photoacoustic tomography，PAT）在此方面优势尤为明显。在PAT中，内源性对比度揭示了生物组织的结构、功能、新陈代谢以及组织学方面的特性，外源性对比度则对应着分子和细胞的特异性。PA...
-      
-    
+      <div id="lc-pv" data-title="光电子技术第二章" data-path="/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-10-27</time>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h1 id="调Q技术"><a href="#调Q技术" class="headerlink" title="调Q技术"></a>调Q技术</h1><h2 id="2-1-调Q基本原理"><a href="#2-1-调Q基本原理" class="headerlink" title="2.1 调Q基本原理"></a>2.1 调Q基本原理</h2><h3 id="一、调Q目的"><a href="#一、调Q目的" class="headerlink" title="一、调Q目的"></a>一、调Q目的</h3><h4 id="1-目的：压缩脉冲宽度、提高峰值功率"><a href="#1-目的：压缩脉冲宽度、提高峰值功率" class="headerlink" title="1.目的：压缩脉冲宽度、提高峰值功率"></a>1.目的：压缩脉冲宽度、提高峰值功率</h4><table>
+<thead>
+<tr>
+<th align="center">脉冲宽度</th>
+<th align="center">峰值功率(1J)</th>
+<th align="center">类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">10^-3^~10^-4^s</td>
+<td align="center">10^3^~10^4^s</td>
+<td align="center">普通脉冲激光器</td>
+</tr>
+<tr>
+<td align="center">10^-8^~10^-9^s</td>
+<td align="center">10^8^~10^9^s</td>
+<td align="center">调Q激光器</td>
+</tr>
+</tbody></table>
+<h4 id="2-举例"><a href="#2-举例" class="headerlink" title="2. 举例"></a>2. 举例</h4><ul>
+<li>激光测距仪</li>
+<li>激光阴影成像仪</li>
+</ul>
+<h3 id="二、脉冲固体激光器的输出特性"><a href="#二、脉冲固体激光器的输出特性" class="headerlink" title="二、脉冲固体激光器的输出特性"></a>二、脉冲固体激光器的输出特性</h3><h4 id="1-特点"><a href="#1-特点" class="headerlink" title="1. 特点"></a>1. 特点</h4><p>a. 输出脉冲呈尖峰振荡（由许多振幅、脉宽、脉冲间隔做随机变化的尖峰脉冲组成）<strong>弛豫震荡</strong><br>b. 脉宽较宽，峰值功率低</p>
+<h4 id="2-原因"><a href="#2-原因" class="headerlink" title="2. 原因"></a>2. 原因</h4><blockquote>
+<p>激光谐振腔损耗不变，一旦光泵使反转粒子数超过阈值，便产生激光，上能级粒子数因受激辐射而减少，致使上能级无法积累大的反转粒子数。只能在阈值附近工作。 增大泵浦能量也无助于峰值功率的提高，只会是小尖峰的个数增加。</p>
+</blockquote>
+<p>提高输入能量==<strong>并不能</strong>==有效提高峰值功率：</p>
+<ul>
+<li>泵浦功率越大，尖峰脉冲形成越快，尖峰的时间间隔越小，尖峰个数增加，输出能量增加，但峰值功率提高不多。</li>
+<li>氙灯亮度一定，增加输入能量则泵浦时间加长，脉冲宽度增大。而且输入能量也不能无限制提高：氙灯和工作物质有一最大负荷。</li>
+</ul>
+<h3 id="三、调Q基本原理"><a href="#三、调Q基本原理" class="headerlink" title="三、调Q基本原理"></a>三、调Q基本原理</h3><blockquote>
+<p>既然激光上能级的最大反转粒子数受激光器阈值的限制，那么，要使上能级积累大量的反转粒子，可通过提高激光器的阈值来实现。在泵浦初期，提高阈值，反转粒子数积累。反转粒子数积累到最大时，突然降低阈值，上能级粒子雪崩式跃迁到低能级，输出巨脉冲</p>
+</blockquote>
+<h4 id="1-Q值定义（Qualify-Factor）"><a href="#1-Q值定义（Qualify-Factor）" class="headerlink" title="1. Q值定义（Qualify Factor）"></a>1. Q值定义（Qualify Factor）</h4><p>Q值定义为，==<strong>谐振腔内储存的总能量与单位时间损耗的能量之比</strong>==。<br>$$<br>Q = 2\pi\nu_0 \frac{腔内储存的能量}{单位时间内损耗的能量}<br>$$</p>
+<blockquote>
+<p>Q值是评价谐振器质量好坏的指标，称为谐振器的品质因数（Quality Factor）</p>
+</blockquote>
+<p>设腔内储能为 W，腔的单程损耗率为 $\delta$，腔长为L，介质折射率为n，则<br>$$<br>Q = 2\pi\nu_0\frac{W}{dW} = 2\pi\nu_0\frac{W}{(\delta W)/(nL/c)}=\frac{2\pi nL}{\delta \lambda_0}<br>$$</p>
+<h4 id="2-调Q途径"><a href="#2-调Q途径" class="headerlink" title="2. 调Q途径"></a>2. 调Q途径</h4><p>$$<br>Q =\frac{2\pi nL}{\delta \lambda_0}=2\pi\nu\frac{L’}{\delta c}=2\pi\nu\tau_R<br>$$</p>
+<p>可见，Q值与激光介质的折射率n，激光器腔长L，以及腔的损耗 $\delta$有关。但在激光形成过程中n和L不易改变，所以只能改变损耗 $\delta$</p>
+<p>==<strong>损耗大，Q值低，激光振荡阈值高，不易起振；<br>损耗低，Q值高，激光振荡阈值低，容易起振。</strong>==</p>
+<h4 id="3-调Q技术的原理"><a href="#3-调Q技术的原理" class="headerlink" title="3. 调Q技术的原理"></a>3. 调Q技术的原理</h4><blockquote>
+<p>调Q技术就是通过某种方法控制腔的损耗，使谐振腔的Q值按照一定的程序变化的技术。</p>
+</blockquote>
+<ol>
+<li>泵浦初期，使腔处于高损耗（低Q值）状态，即提高振荡阈值，使激光难以起振，上能级反转粒子数得以大量积累；</li>
+<li>当上能级粒子数积累到最大值时，==<strong>突然</strong>==降低腔的损耗（提高Q值），激光振荡迅速建立，上能级粒子数雪崩式的跃迁到低能级，形成巨脉冲输出。</li>
+</ol>
+<h4 id="4-调Q过程"><a href="#4-调Q过程" class="headerlink" title="4. 调Q过程"></a>4. 调Q过程</h4><ol>
+<li>能量储存过程：低Q，增益&lt;损耗，工作物质-谐振腔组合储能（反转粒子数上升）</li>
+<li>激光产生与输出过程：高Q值，增益&gt;损耗（反转粒子数下降）<blockquote>
+<p>Q值相当于一个开关<br>Q值低，开关关闭，储能<br>Q值高，开关打开，输出<br>Q调制器，又称为Q开关</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="5-调Q技术分类"><a href="#5-调Q技术分类" class="headerlink" title="5. 调Q技术分类"></a>5. 调Q技术分类</h4><p>$\delta$=$\delta$<del>反射</del>+ $\delta$<del>衍射</del>+$\delta$<del>吸收</del><br>$\delta$<del>反射</del>：机械转镜调Q，电光调Q<br>$\delta$<del>衍射</del>：声光调Q技术<br>$\delta$<del>吸收</del>：染料可饱和吸收调Q</p>
+<h4 id="6-实现调Q对激光器的基本要求"><a href="#6-实现调Q对激光器的基本要求" class="headerlink" title="6. 实现调Q对激光器的基本要求"></a>6. 实现调Q对激光器的基本要求</h4><ol>
+<li>工作物质抗损伤阈值高</li>
+<li>上能级粒子寿命长：泵浦过程使上能级粒子增加，在没有产生受激辐射的情况下，自发辐射使上能级粒子减少，当两者平衡时就是上能级能够积累的最大粒子数。上能级寿命应该尽可能大，但不宜太大，否则会影响能量的释放速度<br>固体、液体激光器均可以实现调Q。但气体激光器，如He-Ne，只能在低电离情况下工作，泵浦速率不能太大，无法实现调Q运转。</li>
+<li>光泵速度必须快于激光上能级自发辐射速率，否则不能实现足够多的粒子数反转</li>
+<li>谐振器的Q值改变要快，一般应与==激光振荡的建立时间==相比拟</li>
+</ol>
+<h2 id="2-2-调Q激光器的基本理论"><a href="#2-2-调Q激光器的基本理论" class="headerlink" title="2.2 调Q激光器的基本理论"></a>2.2 调Q激光器的基本理论</h2><h3 id="一、调Q的速率方程"><a href="#一、调Q的速率方程" class="headerlink" title="一、调Q的速率方程"></a>一、调Q的速率方程</h3><h4 id="1-三能级系统速率方程"><a href="#1-三能级系统速率方程" class="headerlink" title="1. 三能级系统速率方程"></a>1. 三能级系统速率方程</h4>
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/10/27/paper-translation/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/>http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-10-29T09:31:45+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Oct 29, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>笔记</p></a></div>
 
 
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/&title=光电子技术第二章 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/&title=光电子技术第二章 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%BA%8C%E7%AB%A0/&title=光电子技术第二章 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
   
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/'>
+          <p class='title'>光电子技术第一章<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>第一节 调制的基本概念一、调制的目的与定义1. 调制的目的目的：将低频信号加载到高频载波上以利于信息的传递（可能会考）
+2. 调制的定义定义：利用调制信号去改变载波的某一参数，使其按调制的信号规...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -504,103 +706,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/academic/" style="font-size: 14px; color: #999">academic</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E8%B0%83Q%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="toc-text">2.1 调Q基本原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%B0%83Q%E7%9B%AE%E7%9A%84"><span class="toc-text">一、调Q目的</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%9B%AE%E7%9A%84%EF%BC%9A%E5%8E%8B%E7%BC%A9%E8%84%89%E5%86%B2%E5%AE%BD%E5%BA%A6%E3%80%81%E6%8F%90%E9%AB%98%E5%B3%B0%E5%80%BC%E5%8A%9F%E7%8E%87"><span class="toc-text">1.目的：压缩脉冲宽度、提高峰值功率</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%B8%BE%E4%BE%8B"><span class="toc-text">2. 举例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%84%89%E5%86%B2%E5%9B%BA%E4%BD%93%E6%BF%80%E5%85%89%E5%99%A8%E7%9A%84%E8%BE%93%E5%87%BA%E7%89%B9%E6%80%A7"><span class="toc-text">二、脉冲固体激光器的输出特性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%89%B9%E7%82%B9"><span class="toc-text">1. 特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%8E%9F%E5%9B%A0"><span class="toc-text">2. 原因</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%B0%83Q%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="toc-text">三、调Q基本原理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Q%E5%80%BC%E5%AE%9A%E4%B9%89%EF%BC%88Qualify-Factor%EF%BC%89"><span class="toc-text">1. Q值定义（Qualify Factor）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E8%B0%83Q%E9%80%94%E5%BE%84"><span class="toc-text">2. 调Q途径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E8%B0%83Q%E6%8A%80%E6%9C%AF%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-text">3. 调Q技术的原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E8%B0%83Q%E8%BF%87%E7%A8%8B"><span class="toc-text">4. 调Q过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E8%B0%83Q%E6%8A%80%E6%9C%AF%E5%88%86%E7%B1%BB"><span class="toc-text">5. 调Q技术分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E5%AE%9E%E7%8E%B0%E8%B0%83Q%E5%AF%B9%E6%BF%80%E5%85%89%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%A6%81%E6%B1%82"><span class="toc-text">6. 实现调Q对激光器的基本要求</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E8%B0%83Q%E6%BF%80%E5%85%89%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%90%86%E8%AE%BA"><span class="toc-text">2.2 调Q激光器的基本理论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%B0%83Q%E7%9A%84%E9%80%9F%E7%8E%87%E6%96%B9%E7%A8%8B"><span class="toc-text">一、调Q的速率方程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%89%E8%83%BD%E7%BA%A7%E7%B3%BB%E7%BB%9F%E9%80%9F%E7%8E%87%E6%96%B9%E7%A8%8B"><span class="toc-text">1. 三能级系统速率方程</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
 
   
 
-  
-
 
 </aside>
+
 
 
 		  
@@ -609,8 +736,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="光电子技术第二章";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
