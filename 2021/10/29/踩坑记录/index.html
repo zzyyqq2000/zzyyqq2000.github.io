@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Tag: idea - Hexo</title>
+  <title>踩坑记录 - Hexo</title>
+  
+    <meta name="keywords" content="踩坑">
   
 
   
@@ -355,7 +355,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -430,124 +430,280 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
+    
+      <h1 class="title">
+        踩坑记录
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
           
         
           
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/10/29/laser-modulation/">
-        laser modulation
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        opinion of laser modulation technique
-opinion about the article: http://dx.doi.org/10.1070/QEL16297
+            
 
-about the articleintroductionfirst to introduce the advantages of AO modulator:small switching t...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+          
         
-        <time>2021-10-29</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Oct 29, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="踩坑记录" data-path="/2021/10/29/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h4 id="1-数学公示不显示"><a href="#1-数学公示不显示" class="headerlink" title="1. 数学公示不显示"></a>1. 数学公示不显示</h4><p>解决方法为在title下面加上 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mathjax：true</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="2-图片无法加载"><a href="#2-图片无法加载" class="headerlink" title="2. 图片无法加载"></a>2. 图片无法加载</h4><p>以下为解决方法</p>
+<h5 id="第一步：下载相应插件"><a href="#第一步：下载相应插件" class="headerlink" title="第一步：下载相应插件"></a>第一步：下载相应插件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<h5 id="第二步：修改hexo配置"><a href="#第二步：修改hexo配置" class="headerlink" title="第二步：修改hexo配置"></a>第二步：修改hexo配置</h5><p>将<code>_config.yml</code>里的<code>post_asset_folder:false</code>这个选项改为true<br>由此，以后每回通过<code>hexo new &quot;xxxxx&quot;</code>创建新博客时都会创建一个同名文件夹，其目录结构如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">source&#x2F;_post</span><br><span class="line">|</span><br><span class="line">|--------------------xxxxx.md</span><br><span class="line">|--------------------xxxxx（文件夹内放入图片）</span><br></pre></td></tr></table></figure>
+<h5 id="第三步：修改hexo-asset-image插件配置"><a href="#第三步：修改hexo-asset-image插件配置" class="headerlink" title="第三步：修改hexo-asset-image插件配置"></a>第三步：修改<code>hexo-asset-image</code>插件配置</h5><p>使用<code>npm install hexo-asset-image --save</code>命令下载的是<code>hexo-asset-image@1.0.0</code>版本插件，此插件在渲染图片时会将路径设为云端路径，使图片无法显示。需手动改回本地相对路径。更改方法为打开\node_modules\hexo-asset-image\index.js文件，将其中的<br><code>$(this).attr(&#39;src&#39;, config.root + link + src); </code><br>改为<br><code>$(this).attr(&#39;src&#39;, &#39;.&#39;+ config.root + src);</code></p>
+<blockquote>
+<p>其实也可以直接<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code>,这样下载后的版本为<code>hexo-asset-image@0.0.5</code>,无需更改js文件便可正确设置路径。本人由于已经下载了1.0.0版本，不想卸载再重新安装，所以才采取直接修改js文件的方法。两种方法都行。</p>
+</blockquote>
+<h4 id="第四步：在文章中插入图片"><a href="#第四步：在文章中插入图片" class="headerlink" title="第四步：在文章中插入图片"></a>第四步：在文章中插入图片</h4><p>插入格式为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![01](xxxxx&#x2F;01.png)</span><br></pre></td></tr></table></figure>
+<p>xxxxx为md文件名，即储存图片的文件夹名称（它俩一个名）</p>
+<p>Bingo！！！</p>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/10/29/laser-modulation/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/10/29/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/>http://example.com/2021/10/29/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-10-29T11:27:39+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Oct 29, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/10/29/%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E5%99%A8/">
-        激光调制器
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        “难用的”激光调制器件
-本人对激光调制器件使用的最大感受便是——难用，本文浅谈为什么会有此种感受，以及破解之道
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%B8%A9%E5%9D%91/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>踩坑</p></a></div>
 
-一、总括经过学习与在实验室里的实践之后，我得到了对于激光调制器件最直观的感受——难用，很难用。为搞清楚为什么使用起来如此困难，首先我开始反思自身能力问题。发现自身存在很严重的纸上谈兵情况，只是在课堂上学习了器件的原理，距离实际使用之间相差甚远。但另一方面，除能力有限外，激光调制器...
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/10/29/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/&title=踩坑记录 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/10/29/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/&title=踩坑记录 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/10/29/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/&title=踩坑记录 - Hexo&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+</div>
+
+
+
         
-        <time>2021-10-29</time>
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/2021/10/29/%E6%BF%80%E5%85%89%E8%B0%83%E5%88%B6%E5%99%A8/'>
-            Read More
-          </a>
-        </div>
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2021/10/29/laser-modulation/'>
+          <p class='title'>laser modulation<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>opinion of laser modulation technique
+opinion about the article: http://dx.doi.org/10.1070/QEL162...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+  <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.0/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -555,103 +711,28 @@ about the articleintroductionfirst to introduce the advantages of AO modulator:s
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/idea/" style="font-size: 24px; color: #555">idea</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 24px; color: #555">笔记</a> <a href="/tags/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/" style="font-size: 14px; color: #999">论文翻译</a> <a href="/tags/%E8%B8%A9%E5%9D%91/" style="font-size: 14px; color: #999">踩坑</a>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%95%B0%E5%AD%A6%E5%85%AC%E7%A4%BA%E4%B8%8D%E6%98%BE%E7%A4%BA"><span class="toc-text">1. 数学公示不显示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD"><span class="toc-text">2. 图片无法加载</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E4%B8%8B%E8%BD%BD%E7%9B%B8%E5%BA%94%E6%8F%92%E4%BB%B6"><span class="toc-text">第一步：下载相应插件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E4%BF%AE%E6%94%B9hexo%E9%85%8D%E7%BD%AE"><span class="toc-text">第二步：修改hexo配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E4%BF%AE%E6%94%B9hexo-asset-image%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="toc-text">第三步：修改hexo-asset-image插件配置</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E5%9C%A8%E6%96%87%E7%AB%A0%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="toc-text">第四步：在文章中插入图片</span></a></li></ol>
     </div>
   </section>
 
 
   
 
-  
-
 
 </aside>
+
 
 
 		  
@@ -660,8 +741,8 @@ about the articleintroductionfirst to introduce the advantages of AO modulator:s
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="踩坑记录";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
