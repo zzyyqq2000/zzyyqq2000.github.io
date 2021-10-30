@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <title>光电子技术第一章 - zzyyqq1</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="假装我是摘要 第一节 调制的基本概念一、调制的目的与定义1. 调制的目的目的：将低频信号加载到高频载波上以利于信息的传递（可能会考） 2. 调制的定义定义：利用调制信号去改变载波的某一参数，使其按调制的信号规律变化的过程。 解释：  调制信号：要传递的信息要转化为电信号——调制信号 载波：信息载体。要频率高且固定 某一参数：可以是振幅，相位，频率等（只改一个） 调制信号的规律变化：载波的某一参数经">
+<meta property="og:type" content="article">
+<meta property="og:title" content="光电子技术第一章">
+<meta property="og:url" content="https://zzyyqq2000.github.io/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/index.html">
+<meta property="og:site_name" content="zzyyqq1">
+<meta property="og:description" content="假装我是摘要 第一节 调制的基本概念一、调制的目的与定义1. 调制的目的目的：将低频信号加载到高频载波上以利于信息的传递（可能会考） 2. 调制的定义定义：利用调制信号去改变载波的某一参数，使其按调制的信号规律变化的过程。 解释：  调制信号：要传递的信息要转化为电信号——调制信号 载波：信息载体。要频率高且固定 某一参数：可以是振幅，相位，频率等（只改一个） 调制信号的规律变化：载波的某一参数经">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-10-29T01:30:46.000Z">
+<meta property="article:modified_time" content="2021-10-30T03:41:03.572Z">
+<meta property="article:author" content="zzyyqq1">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
+    <link rel="stylesheet" href="../../../../css/style.css?v=1635581499824">
+     
+    
+    <link rel="stylesheet" href="../../../../lib/iconfont/iconfont.css?v=1635581499824">
+    
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="../../../../index.html" title="zzyyqq1" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="zzyyqq1"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="../../../../index.html" title="zzyyqq1">
+            <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="zzyyqq1" alt="zzyyqq1">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>8</div>
+        <div><span>Tags</span>5</div>
+        <div><span>Categories</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="../../../../index.html" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="../../../../about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="../../../../PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="../../../../https:/jq.qq.com/?_wv=1027&k=5CfKHun" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="../../../../https:/space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="../../../../https:/github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="../../../../tags/idea/" style="font-size: 20px;">idea</a> <a href="../../../../tags/test/" style="font-size: 20px;">test</a> <a href="../../../../tags/%E7%AC%94%E8%AE%B0/" style="font-size: 20px;">笔记</a> <a href="../../../../tags/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/" style="font-size: 10px;">论文翻译</a> <a href="../../../../tags/%E8%B8%A9%E5%9D%91/" style="font-size: 10px;">踩坑</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2021 zzyyqq1
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"><img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a><script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: NaN%;"> 
+              <img data-src="/images/光电子技术第一章.png" data-sizes="auto" alt="光电子技术第一章" class="lazyload">
+              <h1>光电子技术第一章</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2021年10月29日</a>
+    <a><i class="nexmoefont icon-areachart"></i>797 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+</div>
+
+      
+
+      <p>假装我是摘要</p>
+<h1 id="第一节-调制的基本概念"><a href="#第一节-调制的基本概念" class="headerlink" title="第一节 调制的基本概念"></a>第一节 调制的基本概念</h1><h2 id="一、调制的目的与定义"><a href="#一、调制的目的与定义" class="headerlink" title="一、调制的目的与定义"></a>一、调制的目的与定义</h2><h3 id="1-调制的目的"><a href="#1-调制的目的" class="headerlink" title="1. 调制的目的"></a>1. 调制的目的</h3><p>目的：<strong>将低频信号加载到高频载波上以利于信息的传递</strong>（可能会考）</p>
+<h3 id="2-调制的定义"><a href="#2-调制的定义" class="headerlink" title="2. 调制的定义"></a>2. 调制的定义</h3><p>定义：利用<strong>调制信号</strong>去改变<strong>载波</strong>的某一参数，使其<strong>按调制的信号规律变化</strong>的过程。</p>
+<p>解释：</p>
+<ol>
+<li>调制信号：要传递的信息要转化为电信号——调制信号</li>
+<li>载波：信息载体。要频率高且固定</li>
+<li>某一参数：可以是振幅，相位，频率等（只改一个）</li>
+<li>调制信号的规律变化：载波的某一参数经调制后<strong>必须按调制信号的规律变化</strong>，否则失真 </li>
+</ol>
+<h2 id="二、激光调制"><a href="#二、激光调制" class="headerlink" title="二、激光调制"></a>二、激光调制</h2><h3 id="1-激光调制"><a href="#1-激光调制" class="headerlink" title="1. 激光调制"></a>1. 激光调制</h3><p> 激光为载波的调制</p>
+<h4 id="（1）定义"><a href="#（1）定义" class="headerlink" title="（1）定义"></a>（1）定义</h4><p>把信息加载到激光辐射上的过程</p>
+<h4 id="（2）特点"><a href="#（2）特点" class="headerlink" title="（2）特点"></a>（2）特点</h4><p>高频调制，频带宽，理想载体</p>
+<h4 id="（3）激光调制与无线电波调制的异同？"><a href="#（3）激光调制与无线电波调制的异同？" class="headerlink" title="（3）激光调制与无线电波调制的异同？"></a>（3）激光调制与无线电波调制的异同？</h4><p>概念相同：相位调制、频率调制、振幅调制、脉冲调制<br>结构不同：激光为高频调制，无线电为低频调制<br>共同点：用非线性效应调制，即无线电波调制利用放大器的非线性效应调制，激光用电光、磁光，声光等非线性效应</p>
+<h4 id="（4）调制器"><a href="#（4）调制器" class="headerlink" title="（4）调制器"></a>（4）调制器</h4><p>想用家光完成通信就要把信息加载到激光上，<strong>完成这一过程的被称为调制器</strong></p>
+<h4 id="（5）应用"><a href="#（5）应用" class="headerlink" title="（5）应用"></a>（5）应用</h4><ol>
+<li>实现信息加载——光信息技术：激光制导等</li>
+<li>控制工作状态——调Q，锁模技术：产生超短脉冲等</li>
+</ol>
+<h3 id="2-激光调制的分类（两种）"><a href="#2-激光调制的分类（两种）" class="headerlink" title="2. 激光调制的分类（两种）"></a>2. 激光调制的分类（两种）</h3><h4 id="（1）按调制器与激光器的相对位置分"><a href="#（1）按调制器与激光器的相对位置分" class="headerlink" title="（1）按调制器与激光器的相对位置分"></a>（1）按调制器与激光器的相对位置分</h4><ul>
+<li><strong>内调制</strong>：在激光形成过程中，一调制信号改变激光震荡某一参数，即用<strong>调制信号控制着激光的形成</strong>（两种实现方式）<br>（1） 用调制信号控制泵浦电流，如LD的调制-直接调制<br>（2） 在谐振腔内放置调制器</li>
+</ul>
+<p>​        优点：调制器需要激励功率小，调制效率高<br>​        缺点：有附加损耗，降低输出功率；调制器带宽受谐振腔通带的限制</p>
+<ul>
+<li><strong>外调制</strong>：调制器在激光腔外<br>优点：不影响激光器的输出功率；不受谐振腔通带的限制。<br>缺点：调制效率低。</li>
+</ul>
+<h4 id="（2）按调制的性质分"><a href="#（2）按调制的性质分" class="headerlink" title="（2）按调制的性质分"></a>（2）按调制的性质分</h4><p>激光的瞬间电场 :                    $  e_c(t) = A_c cos(\omega_c t+\phi_c)  $</p>
+<ul>
+<li>$A_c$——振幅调制/光强调制（$I = |A|^2$）</li>
+<li>$\omega_c$——频率调制                                </li>
+<li>$\phi_c$——相位调制</li>
+</ul>
+<p>若以脉冲激光作为载波：</p>
+<ul>
+<li>脉冲调制</li>
+<li>脉冲编码调制（数字式调制）</li>
+</ul>
+<h2 id="三、振幅调制和光强调制"><a href="#三、振幅调制和光强调制" class="headerlink" title="三、振幅调制和光强调制"></a>三、振幅调制和光强调制</h2><h3 id="1-振幅调制（调幅-AM）"><a href="#1-振幅调制（调幅-AM）" class="headerlink" title="1. 振幅调制（调幅-AM）"></a>1. 振幅调制（调幅-AM）</h3><p>（1）定义：载波的振幅随着调制信号的规律发生变化的震荡<br>调制前： $  e_c(t) = A_c cos(\omega_c t+\phi_c)  $  (注：c-carrier为载波)<br>调制后： $  e_c(t) = A_c(t) cos(\omega_c t+\phi_c)  $<br>调制后的振幅： $   A_c(t) = A_c+Ka(t)  $<br>$a(t)$为调制信号（信息），K为比例系数（调制灵敏度）</p>
+<p>假设： $   a(t) = A_m cos(\omega_m t) $ 注：m – modulate (调制)</p>
+<p>调制后的电场： $  e_c(t)=(A_c+KA_m cos(\omega_m t)) cos(\omega_c t+\phi_c)  $</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>zzyyqq1<br>
+        <strong>Link：</strong><a href="../../../../https:/zzyyqq2000.github.io/2021/10/29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/" title="https:&#x2F;&#x2F;zzyyqq2000.github.io&#x2F;2021&#x2F;10&#x2F;29&#x2F;%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;zzyyqq2000.github.io&#x2F;2021&#x2F;10&#x2F;29&#x2F;%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="../../../../tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+ 
+
+<script async src="../../../../js/app.js?v=1635581499825"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
