@@ -1,21 +1,13 @@
-
-
 <!DOCTYPE html>
-<html lang="en" data-default-color-scheme=auto>
-
-
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/favicon.png">
-  <link rel="icon" href="../../../../img/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
   
-  <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
-  <meta name="author" content="zzyyqq1">
-  <meta name="keywords" content="">
+  <title>paper translation | zzyyqq1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Whoknow,zzyyqq1's Blog" />
+  
   <meta name="description" content="光声层析成像在生命科学中的实际应用摘要将宏观观测与微观发现紧密联系在一起的成像技术使生命科学受益匪浅。作为一种在多个空间尺度上都可以高速对光吸收对比度进行高灵敏度成像的技术，光声层析成像（photoacoustic tomography，PAT）在此方面优势尤为明显。在PAT中，内源性对比度揭示了生物组织的结构、功能、新陈代谢以及组织学方面的特性，外源性对比度则对应着分子和细胞的特异性。PAT技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="paper translation">
@@ -27,221 +19,132 @@
 <meta property="article:modified_time" content="2021-10-29T13:08:34.029Z">
 <meta property="article:author" content="zzyyqq1">
 <meta property="article:tag" content="论文翻译">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
   
-  <title>paper translation - zzyyqq1</title>
-
-  <link  rel="stylesheet" href="../../../../https:/cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
-
-
-  <link  rel="stylesheet" href="../../../../https:/cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
-  <link  rel="stylesheet" href="../../../../lib/hint/hint.min.css" />
+  
+    <link rel="icon" href="/logo.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+<link rel="stylesheet" href="../../../../css/style.css">
 
   
-    
-    
-      
-      <link  rel="stylesheet" href="../../../../https:/cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
-    
+<script src="../../../../js/pace.min.js"></script>
+
   
 
   
-    <link  rel="stylesheet" href="../../../../https:/cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
   
 
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-
-<link rel="stylesheet" href="../../../../at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
-
-
-
-<link rel="stylesheet" href="../../../../at.alicdn.com/t/font_1736178_kmeydafke9r.css">
-
-
-<link  rel="stylesheet" href="../../../../css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"zzyyqq2000.github.io","root":"/","version":"1.8.12","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname"}},"search_path":"/local-search.xml"};
-  </script>
-  <script  src="../../../../js/utils.js" ></script>
-  <script  src="../../../../js/color-schema.js" ></script>
 <!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
 
-
 <body>
-  <header style="height: 70vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="../../../../index.html">
-      <strong>Fluid</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="../../../../index.html" class="left">
+                    <span class="site-title">zzyyqq1&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="../../../../index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="../../../../archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="../../../../about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="../../../../index.html">
+                    <img src="../../../../images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        zzyyqq1&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        专注于搞事情
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="zzyyqq1" target="_blank" href="../../../../zzyyqq1.top">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="../../../../github.com/zzyyqq2000">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="zhihu" target="_blank" href="../../../../zhihu.com/people/wang-shi-yue-qian-nian-2000">
+                            <i class="fa fa-zhihu fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-paper-translation" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
         
+  
+    <h1 class="post-title" itemprop="name">
+      paper translation
+    </h1>
+    <div class="post-title-bar">
+      <ul>
           
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="../../../../index.html">
-                <i class="iconfont icon-home-fill"></i>
-                Home
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="../../../../archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                Archives
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="../../../../categories/">
-                <i class="iconfont icon-category-fill"></i>
-                Categories
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="../../../../tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                Tags
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="../../../../about/">
-                <i class="iconfont icon-user-fill"></i>
-                About
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
-            </a>
-          </li>
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
+        <li>
+          <i class="fa fa-calendar"></i>  2021-10-27
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
       </ul>
     </div>
-  </div>
-</nav>
-
-    <div class="banner" id="banner" parallax=true
-         style="background: url('../../../../img/default.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="paper translation">
-              
-            </span>
-
-            
-              <div class="mt-3">
   
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-10-27 23:08" pubdate>
-        October 27, 2021 pm
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      11k 字
-    </span>
-  
-
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      35 分钟
-    </span>
-  
-
-  
-  
-</div>
-
-            
-          </div>
 
           
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
+      </header>
     
+    <div class="article-entry post-content" itemprop="articleBody">
       
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">paper translation</h1>
             
-            <div class="markdown-body">
-              <h1 id="光声层析成像在生命科学中的实际应用"><a href="#光声层析成像在生命科学中的实际应用" class="headerlink" title="光声层析成像在生命科学中的实际应用"></a>光声层析成像在生命科学中的实际应用</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>将宏观观测与微观发现紧密联系在一起的成像技术使生命科学受益匪浅。作为一种在多个空间尺度上都可以高速对光吸收对比度进行高灵敏度成像的技术，光声层析成像（photoacoustic tomography，PAT）在此方面优势尤为明显。在PAT中，内源性对比度揭示了生物组织的结构、功能、新陈代谢以及组织学方面的特性，外源性对比度则对应着分子和细胞的特异性。PAT技术可成像的空间尺度覆盖了细胞器、细胞、组织、器官以及小动物等层级。因此，PAT可与其他成像方式在对比机制、成像深度、时空分辨率等方面形成互补。我们回顾了PAT的基本原理并对如何让PAT满足特定科研需求提供了一些建议。我们也总结了PAT在生物医学领域中最有前景的应用，泰伦相关的风险与挑战，并对PAT可能带来的突破进行了畅想。</p>
+            <h1 id="光声层析成像在生命科学中的实际应用"><a href="#光声层析成像在生命科学中的实际应用" class="headerlink" title="光声层析成像在生命科学中的实际应用"></a>光声层析成像在生命科学中的实际应用</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>将宏观观测与微观发现紧密联系在一起的成像技术使生命科学受益匪浅。作为一种在多个空间尺度上都可以高速对光吸收对比度进行高灵敏度成像的技术，光声层析成像（photoacoustic tomography，PAT）在此方面优势尤为明显。在PAT中，内源性对比度揭示了生物组织的结构、功能、新陈代谢以及组织学方面的特性，外源性对比度则对应着分子和细胞的特异性。PAT技术可成像的空间尺度覆盖了细胞器、细胞、组织、器官以及小动物等层级。因此，PAT可与其他成像方式在对比机制、成像深度、时空分辨率等方面形成互补。我们回顾了PAT的基本原理并对如何让PAT满足特定科研需求提供了一些建议。我们也总结了PAT在生物医学领域中最有前景的应用，泰伦相关的风险与挑战，并对PAT可能带来的突破进行了畅想。</p>
 <p>现代生物医学成像技术提供了从分子到解剖学各个层次的对生物体的完整展示，引发了生命科学的革新。纵观历史，这些成像技术通过更高的空间分辨率、更高的对比度、更高的成像速度、更深的成像深度以及更高的灵敏度，使人类以前所未有的信息丰富度，瞥见了复杂生物系统的奥秘。在宏观层面，包括磁共振、X光计算层析、超声成像在内的许多方式对解剖学层次实现了极佳的成像深度。正电子发射层析和单光子发射计算层析技术实现了对放射性标记分子探针的高穿透深度和高对比度成像。在微观层面，光学显微技术可以对表层深度上的生物现象进行亚细胞和亚细胞器分辨率的观察。然而，这些成像工具的不同成像对比机制以及尺寸大小限制了对生物问题进行相关性多尺度研究。因此，在生命科学领域很有必要找到一种可以从微观到宏观均可成像的技术。</p>
 <p>在过去的十年里，PAT（也被称为光声或热声层析技术）已经被证明可利用同一套成像对比机制实现多尺度的成像；因此，它完美搭建起了微观与宏观的桥梁。PAT是一种混合成像模式，它利用光声效应（一种可以将所吸收的光能转化为超声能量的物理现象），通过检测超声信号进而探知光能吸收对比度。光学激发与超声探测的结合提供了3大优势。（1）PAT天然适合通过内源性对比度揭示了生物组织的结构、功能、新陈代谢以及组织学方面的特性，通过外源性对比度揭示分子和细胞的特异性。（2）因为就平均散射自由程而言，生物组织对声波的穿透性要比对光的穿透性高几个数量级，因此PAT比光学显微技术能提供更深得多的成像深度以及可调的空间分辨率。（3）PAT与其他的成像方式有很好的互补性和兼容性，尤其是和光学成像与超声成像。</p>
 <p>历时一个多世纪，光声成像才从一个已知的物理现象发展成为有价值的成像方法。尽管广生效应早在1880年就被Bell在发明电话时发现，直到100年后Bowen才提出通过电力辐射（如高能量电子和X光子）或者非电离辐射（如辐射波和微波）的激发来利用此效应进行成像。他演示了使用辐射波实现的一维深度成像，但缺少了预期的侧向成像，在专利中也没有提到使用光激发的可能性。在20世纪90年代，相应的采用激光的一维深度成像技术问世。随着反重建与球聚焦超声探测器的引入，能同时实现轴向和纵向探测的2D、3D PAT最终被实现。在接下来的十年里，解剖学、功能、分子层次的PAT接连取得里程碑式进展。尤其是首个功能性光声计算层析（PACT）和光声显微（PAM）的出现极大刺激了这一领域的高速发展。</p>
@@ -278,196 +181,300 @@
 <h2 id="展望"><a href="#展望" class="headerlink" title="展望"></a>展望</h2><p>PAT发展的强劲势头来源于它在生命科学领域日渐流行的应用以及在预临床和临床研究中的商业化。几个较为典型的工程挑战已经在<strong>专栏2</strong>中列出。为了充分挖掘PAT的潜力，微米面对很多技术难题，但没有一个是无法解决的。（1）单个PAT系统若能集成多尺度成像并实现自动成像校准，其价值无法估量。主要的挑战在于不同成像深度所需的不同光照与声学探测的无缝整合。光学透明的超声换能器或换能器阵列或许可以简化系统配置。（2）小型化PAT系统对研究自由运动的动物成像，尤其是对于脑部研究，具有巨大意义。小型超声换能器相对较低的灵敏度以及选择不多的快速扫描机制目前是最大的掣肘。高速宽场声压光探测器或许是一个解决办法。（3）研究树突棘等亚细胞结构仍需要可实现精度高于50nm的超分辨PA技术。这样的技术可以用于对荧光或非荧光小分子进行超分辨成像。目前已有的非线性PA技术的信噪比仍然不够用于在高速状态下提供如此高的分辨率。类似手机辐射损耗显微镜（STED）的圈状照明方法具有提高分辨率的潜力。（4）分子生物学对PAT的单分子探测有很大需求。具有高压电转化效率和低声阻抗的新型超声探测器有待研发。（5）对深层组织的氧化与温度通过PA进行精确定量测量仍有很大困难，主要因为目标处光学荧光未知，以及其他次生因素的干扰，如与组织本身相关的PA产生效率。需要新的成像方式以及数值计算方法来更好描绘组织的光学特征。（6）最后，对于脑部深处的神经活动成像PAT系统，需要从自然界中寻找或根据已有蛋白质设计新型的基因可编辑的在近红外光谱区具有大吸收截面的可用于动作电位或替代指标（如电压或钙敏感蛋白质）检测的指示剂。沿着这个思路，非荧光近红外光敏色素（如RpBphP）或许可以改造成PA成像介质来显示动作电位。由头骨，尤其是内侧头骨，引起的强烈的声学吸收和相差对于单神经元PAT脑部深度成像而言优势一项挑战。一个潜在的对此问题的解决方法是集成PAT和X光CT，这可以为头骨的精确三维建模提供光学修正参数。</p>
 <p>PAT为生命科学提供了完备的工具包，在成像机制、时空分辨率、穿透深度上与其他方法互为补充。我们期待PAT可以在生物医学研究中找到更有意义的应用。</p>
 
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="../../../../tags/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/">论文翻译</a>
-                    
-                  </div>
-                
-              </div>
-              
-                <p class="note note-warning">
-                  
-                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
-                  
-                </p>
-              
-              
-                <div class="post-prevnext">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="../../29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">光电子技术第一章</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                  </article>
-                </div>
-              
-            </div>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2021年10月29日 21:08</p>
+        <p>原始链接： <a class="post-url" href="" title="paper translation">https://zzyyqq2000.github.io/2021/10/27/paper-translation/</a></p>
+        <footer>
+            <a href="https://zzyyqq2000.github.io">
+                <img src="../../../../images/logo.png" alt="zzyyqq1">
+                zzyyqq1
+            </a>
+        </footer>
+    </div>
+</div>
 
+      
+        
             
-          </article>
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="../../../../images/wechat_code.jpg" alt="打赏二维码">
         </div>
-      </div>
-    </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">keyword</label>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="../../../../images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="../../../../images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="../../../../images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="../../../../images/alipay.png" alt="支付宝">
+            </label>
+            
         </div>
-        <div class="list-group" id="local-search-result"></div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://zzyyqq2000.github.io/2021/10/27/paper-translation/&title=《paper translation》 — zzyyqq1&pic=/images/paper-translation.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://zzyyqq2000.github.io/2021/10/27/paper-translation/&title=《paper translation》 — zzyyqq1&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://zzyyqq2000.github.io/2021/10/27/paper-translation/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《paper translation》 — zzyyqq1&url=https://zzyyqq2000.github.io/2021/10/27/paper-translation/&via=https://zzyyqq2000.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://zzyyqq2000.github.io/2021/10/27/paper-translation/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://zzyyqq2000.github.io/2021/10/27/paper-translation/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/论文翻译/" class="color5">论文翻译</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E5%85%89%E5%A3%B0%E5%B1%82%E6%9E%90%E6%88%90%E5%83%8F%E5%9C%A8%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E4%B8%AD%E7%9A%84%E5%AE%9E%E9%99%85%E5%BA%94%E7%94%A8"><span class="post-toc-text">光声层析成像在生命科学中的实际应用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%91%98%E8%A6%81"><span class="post-toc-text">摘要</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%93%E6%A0%8F1-PAT%E4%B8%AD%E7%9A%84%E5%85%89%E6%BA%90"><span class="post-toc-text">专栏1 PAT中的光源</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#PAT%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="post-toc-text">PAT的基本原理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#PAT%E7%9A%84%E4%B8%BB%E8%A6%81%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95"><span class="post-toc-text">PAT的主要实现方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#PAT%E7%9A%84%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90"><span class="post-toc-text">PAT的图像生成</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#PAT%E7%B3%BB%E7%BB%9F%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%8C%B9%E9%85%8D%E7%9A%84%E5%BC%95%E7%94%A8"><span class="post-toc-text">PAT系统及其相匹配的引用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%88%90%E5%83%8F%E6%B7%B1%E5%BA%A6"><span class="post-toc-text">成像深度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%A9%BA%E9%97%B4%E5%88%86%E8%BE%A8%E7%8E%87"><span class="post-toc-text">空间分辨率</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%88%90%E5%83%8F%E9%80%9F%E5%BA%A6"><span class="post-toc-text">成像速度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%88%90%E5%83%8F%E5%AF%B9%E6%AF%94%E5%BA%A6%E4%BB%A5%E5%8F%8A%E7%81%B5%E6%95%8F%E5%BA%A6"><span class="post-toc-text">成像对比度以及灵敏度</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%BA%94%E7%94%A8"><span class="post-toc-text">应用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%93%E6%A0%8F2-PAT%E4%B8%AD%E9%9D%A2%E4%B8%B4%E7%9A%84%E5%B7%A5%E7%A8%8B%E6%8C%91%E6%88%98"><span class="post-toc-text">专栏2 PAT中面临的工程挑战</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%B1%95%E6%9C%9B"><span class="post-toc-text">展望</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="../../29/%E5%85%89%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          光电子技术第一章
+        
+      </span>
+    </a>
+  
+  
+</nav>
+
+
+
+    
+</section>
+        
       </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2021 zzyyqq1<br>
+      </p>
     </div>
   </div>
-</div>
-    
-
-    
-  </main>
-
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-  </div>
-  
-
-  
-
-  
 </footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "https://zzyyqq2000.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="../../../../tags/idea/" style="font-size: 20px;">idea</a> <a href="../../../../tags/test/" style="font-size: 10px;">test</a> <a href="../../../../tags/%E7%AC%94%E8%AE%B0/" style="font-size: 20px;">笔记</a> <a href="../../../../tags/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/" style="font-size: 10px;">论文翻译</a> <a href="../../../../tags/%E8%B8%A9%E5%9D%91/" style="font-size: 10px;">踩坑</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="../../../../index.html">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="../../../../archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="../../../../about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="../../../../tags/idea/" style="font-size: 20px;">idea</a> <a href="../../../../tags/test/" style="font-size: 10px;">test</a> <a href="../../../../tags/%E7%AC%94%E8%AE%B0/" style="font-size: 20px;">笔记</a> <a href="../../../../tags/%E8%AE%BA%E6%96%87%E7%BF%BB%E8%AF%91/" style="font-size: 10px;">论文翻译</a> <a href="../../../../tags/%E8%B8%A9%E5%9D%91/" style="font-size: 10px;">踩坑</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+
+<script src="../../../../js/search.js"></script>
 
 
-  <!-- SCRIPTS -->
+<script src="../../../../js/main.js"></script>
+
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
   
-  <script  src="../../../../https:/cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="../../../../https:/cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+<script src="../../../../js/particles.js"></script>
+
+
+
+
+
+
+
+
+  
+<link rel="stylesheet" href="../../../../cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  
+<script src="../../../../js/animate.js"></script>
+
+
+
+  
+<script src="../../../../js/pop-img.js"></script>
 
   <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
+     $(".article-entry p img").popImg();
   </script>
 
-
-<script  src="../../../../https:/cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
-<script  src="../../../../https:/cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="../../../../js/events.js" ></script>
-<script  src="../../../../js/plugins.js" ></script>
-
-<!-- Plugins -->
-
-
-  <script  src="../../../../js/local-search.js" ></script>
-
-
-
-  
-    <script  src="../../../../js/img-lazyload.js" ></script>
-  
-
-
-
-  
-
-
-
-  
-    <script  src="../../../../https:/cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
-  
-  
-    <script  src="../../../../https:/cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
-  
-  
-    <script  src="../../../../https:/cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
-  
-  
-    <script defer src="../../../../https:/cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
-  
-
-
-
-
-
-
-  <script  src="../../../../https:/cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-      typing(title)
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
-<script  src="../../../../js/boot.js" ></script>
-
-
+  </div>
 </body>
 </html>
